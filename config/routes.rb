@@ -1,10 +1,15 @@
 Rails.application.routes.draw do
+  resources :cards
+
   resources :themes
 
 
   PagesController.action_methods.each do |action|
-    get "/#{action}", to: "pages##{action}", as: "#{action}_page"
+    get "/#{action}", to: "pages##{action}", as: "#{action}"
   end 
+
+  root 'pages#home'
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.

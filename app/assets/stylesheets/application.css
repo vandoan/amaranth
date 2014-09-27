@@ -12,7 +12,8 @@
  *
  *= require_tree .
  *= require_self
+ *= require rails_bootstrap_forms
  */
 
 
-.main { margin: 2em; }
+.main { margin: 3em; }

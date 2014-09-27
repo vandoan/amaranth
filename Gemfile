@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem "bootstrap_form"
 gem "twitter-bootstrap-rails"
 
 

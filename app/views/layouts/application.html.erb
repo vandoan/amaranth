@@ -9,8 +9,18 @@
 
 
 	<body>
-		<%= nav_bar :brand => "Project Amaranth", :brand_link => themes_path,  :static => :top, :responsive => true %> 
+		<%= nav_bar :brand => "Project Amaranth", :brand_link => root_path,  :static => :top, :responsive => true do%> 
+			<%= menu_group do %> 
+				<%= menu_item "Home", root_path %> 
+				<%= menu_item "Themes", themes_path %>
+				<%= menu_item "Cards", cards_path %>
+				<%= menu_item "About", about_path %>
+			<% end %>
+		<% end %>
+				
+
 		<div class="main"> 
+
 
 
 

@@ -18,4 +18,7 @@ To-Do
 - create ability to add cards
 	- image uploader
 
+- create relationships
+
+- 
  

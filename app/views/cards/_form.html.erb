@@ -1,0 +1,34 @@
+
+<div class="container col-md-12">
+<div class="col-md-3 newCard">
+  
+  <%= bootstrap_form_for(@card) do |f| %>
+    <% if @card.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@card.errors.count, "error") %> prohibited this card from being saved:</h2>
+
+        <ul>
+        <% @card.errors.full_messages.each do |message| %>
+           <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <div class="innerCard">
+
+     <div class="field">
+      <%= f.text_field :theme %>
+    </div>
+    <div class="field">
+      <%= f.file_field :image %>
+    </div>
+    <div class="field">
+      <%= f.text_field :caption %>
+    </div>
+    <div class="actions">
+      <center><%= f.submit "+", :class => "block-center btn btn-info btn-lg col-md-12" %></center>
+    </div>
+  </div>
+  <% end %>
+</div>
+</div>
