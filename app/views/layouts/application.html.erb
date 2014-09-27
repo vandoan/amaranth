@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Amaranth</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+	  <title>Amaranth</title>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+	</head>
 
-<%= yield %>
 
-</body>
+	<body>
+		<%= nav_bar :brand => "Project Amaranth", :brand_link => themes_path,  :static => :top, :responsive => true %> 
+		<div class="main"> 
+
+
+
+	<%= yield %>
+
+
+
+
+ 		</div>
+	</body>
 </html>
