@@ -33,8 +33,5 @@ x add boot strap
 		- https://github.com/plataformatec/simple_form
 	- static pages
 	- add cards and js
+	- when creating a new card, redirect to its gallery page
 
-
-	* added carrierwave, got the code to work, uploads photo
-	* improved the index pages for theme and card
-	* added the function of where only cards with the same title will show under themes of the same title 

@@ -1,27 +1,18 @@
 <h1> All the Cards</h1> <br>
 
-<table>
-  <thead>
-    <tr class="centerTd">
-      <th></th>
-      <th>Caption</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
+  
   <tbody>
     <% @cards.each do |card| %>
-      <tr class="rows">
-        <td><%= image_tag(card.image_url, :class => "thumb")  %></td>
-        <td><%= card.caption %></td>
-        <td><%= link_to 'Show', card %></td>
-        <td><%= link_to 'Edit', edit_card_path(card) %></td>
-        <td><%= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+    <div class="col-md-3 boo">
+        <li><%= link_to image_tag(card.image_url, :class => "thumb"), card_path(card.id) %></li>
+        
+        <div class="edit">
+          <li><%= card.caption %></li>
+          <li><%= link_to 'Show', card %></li>
+          <li><%= link_to 'Edit', edit_card_path(card) %></li>
+          <li><%= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+        </div>
+      </div>
     <% end %>
-  </tbody>
-</table>
-
-<br>
 
 <%= link_to 'New Card', new_card_path, :class => "btn btn-sm btn-info" %>

@@ -1,14 +1,13 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p>
+ -->
 
-<p>
-  <strong>Image:</strong>
-  <%= @card.image %>
-</p>
+ 	<li><%= image_tag(@card.image_url, :class => "col-md-5" ) %></li>
+ 	<br>
 
-<p>
-  <strong>Caption:</strong>
-  <%= @card.caption %>
-</p>
+  	<h2> <%= @card.caption %> <h2>
 
-<%= link_to 'Edit', edit_card_path(@card) %> |
-<%= link_to 'Back', cards_path %>
+
+<div class="bottomBtn col-md-12">
+	<li> <%= link_to 'Edit', edit_card_path(@card), :class => "btn btn-info" %></li> 
+	<li> <%= link_to 'Back', cards_path, :class => "btn btn-info" %> </li> 
+</div>

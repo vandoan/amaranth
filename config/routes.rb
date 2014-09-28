@@ -8,6 +8,8 @@ Rails.application.routes.draw do
     get "/#{action}", to: "pages##{action}", as: "#{action}"
   end 
 
+
+
   root 'pages#home'
 
 

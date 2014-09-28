@@ -1,12 +1,11 @@
 <h1>Themes</h1>
 
 
-
     <% @themes.each do |theme| %>
       <div class="col-md-4"> 
         <div class="item">
           <ul><li> <center><h4><%= theme.title %><center></h4></li>
-            <li><%= image_tag(theme.image_url, :class => "thumb") %> </li> 
+            <li><%= link_to image_tag(theme.image_url, :class => "thumb"), theme_path(theme.id) %> </li> 
           </ul>
           <ul class="details">
             <br>

@@ -23,3 +23,8 @@ hurdles
       </div>
 
 
+- spent 2 hours on this one, how to combine an image tag with a link to tag
+
+    - <li><%= link_to image_tag(theme.image_url, :class => "thumb"), theme_path(theme.id) %> </li> 
+
+    - http://stackoverflow.com/questions/4643698/ruby-on-rails-using-link-to-with-image-tag
