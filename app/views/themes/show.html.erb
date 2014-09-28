@@ -1,34 +1,52 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @theme.title %>
-</p>
 
-<p>
-  <strong>Image:</strong>
-  <%= @theme.image %>
-</p>
+  <h3> <%= @theme.title %> <h3>
+  <h4> <%= @theme.description %> </h4> <br>
 
-<p>
-  <strong>Description:</strong>
-  <%= @theme.description %>
-</p>
+        <% @cards = Card.all %>
+        <% @cards.each do |card| %>
+          <% if card.title == @theme.title %>  
 
-<% @cards = Card.all %>
- <% @cards.each do |card| %>
-      <tr>
-        <td><%= card.image %></td>
-        <td><%= card.caption %></td>
-        <td><%= link_to 'Show', card %></td>
-        <td><%= link_to 'Edit', edit_card_path(card) %></td>
-        <td><%= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <div class="col-md-4"> 
+        <div class="item">
+          <ul><li> <center><h4><%= card.title %><center></h4></li>
+            <li><%= image_tag(card.image_url, :class => "thumb") %> </li> 
+          </ul>
+          <ul class="details">
+            <br>
+            <li><%= card.caption %></li>
+              <div class="edit">
+                <li><%= link_to 'Show', card %></li>
+                <li><%= link_to 'Edit', edit_card_path(card) %></li>
+                <li><%= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+              </div>
+          </ul>
+        </div>
+        <br>
+      </div>
     <% end %>
+  <% end %>
+
+
+  <%= bootstrap_form_for Card.new do |f| %>
+    
+      <div class="innerCard col-md-4 topicCard">
+        <div class="col-md-7">
+        <%= f.hidden_field :title,  value: "#{@theme.title}"  %>
+          <%= f.file_field :image %>
+          <%= f.text_field :caption %>
+          <br>
+          <div class="actions">
+            <center><%= f.submit "+", :class => " btn btn-info col-md-12 ", :style => "font-size:1.4em;" %></center>
+           </div>
+        <% end %>
+      </div>
+      </div>
 
 
 
-
-
-<%= link_to 'Edit', edit_theme_path(@theme) %> |
 <%= link_to 'Back', themes_path %>
+
+
+ 

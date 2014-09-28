@@ -3,25 +3,26 @@
 <div class="container col-md-12">
   <div class="col-md-3 newCard">
 
- <%= bootstrap_form_for(@theme) do |f| %>
-  <% if @theme.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@theme.errors.count, "error") %> prohibited this theme from being saved:</h2>
+     <%= bootstrap_form_for(@theme) do |f| %>
+        <% if @theme.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(@theme.errors.count, "error") %> prohibited this theme from being saved:</h2>
 
-      <ul>
-      <% @theme.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+            <ul>
+            <% @theme.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+            </ul>
+          </div>
+        <% end %>
+
+        <div class="innerCard">
+          <%= f.text_field :title, :label => "Theme" %>
+          <%= f.file_field :image %>
+          <%= f.text_area :description, :rows => "4" %>
+              <center><%= f.submit "+", :class => " btn btn-info col-md-12 ", :style => "font-size:1.4em;" %></center>
+        </div>
       <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="innerCard">
-    <%= f.text_field :title %>
-    <%= f.text_field :image %>
-    <%= f.text_field :description %>
-        <center><%= f.submit "+", :class => " btn btn-info col-md-12 ", :style => "font-size:1.4em;" %></center>
   </div>
-      <% end %>
 </div>
-</div>
+

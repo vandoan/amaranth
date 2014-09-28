@@ -1,6 +1,22 @@
 
 
 
+index
+------------------------------------------
+  <tbody>
+    <% @themes.each do |theme| %>
+      <tr class="rows">
+        <td><%= theme.title %></td>
+        <td><%= image_tag(theme.image_url, :class => "thumb")  %></td>
+        <td><%= theme.description %></td>
+        <td><%= link_to 'Show', theme %></td>
+        <td><%= link_to 'Edit', edit_theme_path(theme) %></td>
+        <td><%= link_to 'Destroy', theme, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+
+
+
 
 
 back button

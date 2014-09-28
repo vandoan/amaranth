@@ -15,6 +15,7 @@ class ThemesController < ApplicationController
   # GET /themes/new
   def new
     @theme = Theme.new
+    @card = Card.new
   end
 
   # GET /themes/1/edit
@@ -25,6 +26,7 @@ class ThemesController < ApplicationController
   # POST /themes.json
   def create
     @theme = Theme.new(theme_params)
+    @card = Card.new(card_params)
 
     respond_to do |format|
       if @theme.save
@@ -70,5 +72,8 @@ class ThemesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def theme_params
       params.require(:theme).permit(:title, :image, :description, :caption, :card)
+    end
+    def card_params
+      params.require(:card).permit(:image, :caption, :title, :theme)
     end
 end

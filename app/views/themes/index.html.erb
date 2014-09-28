@@ -1,30 +1,32 @@
-<h1>Listing themes</h1>
+<h1>Themes</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Image</th>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
+
     <% @themes.each do |theme| %>
-      <tr>
-        <td><%= theme.title %></td>
-        <td><%= theme.image %></td>
-        <td><%= theme.description %></td>
-        <td><%= link_to 'Show', theme %></td>
-        <td><%= link_to 'Edit', edit_theme_path(theme) %></td>
-        <td><%= link_to 'Destroy', theme, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <div class="col-md-4"> 
+        <div class="item">
+          <ul><li> <center><h4><%= theme.title %><center></h4></li>
+            <li><%= image_tag(theme.image_url, :class => "thumb") %> </li> 
+          </ul>
+          <ul class="details">
+            <br>
+            <li><%= theme.description %></li>
+              <div class="edit">
+                <li><%= link_to 'Show', theme %></li>
+                <li><%= link_to 'Edit', edit_theme_path(theme) %></li>
+                <li><%= link_to 'Destroy', theme, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+              </div>
+          </ul>
+        </div>
+        <br>
+      </div>
     <% end %>
-  </tbody>
-</table>
+        <br>
+        <div>
+          <%= link_to 'New Theme', new_theme_path, :class => "btn btn-sm btn-info", :style => "float: left; clear: both; margin: 3em;" %>
+        </div>
 
-<br>
 
-<%= link_to 'New Theme', new_theme_path, :class => "btn btn-sm btn-info" %>
+
+
 
