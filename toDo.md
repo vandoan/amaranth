@@ -37,5 +37,27 @@ x add boot strap
 	- add cards and js
 	- when creating a new card, redirect to its gallery page
 
+- heroku 
+	- deploy the app
+	- heroku login 
+	- heroku create 
+	- rake asset:precompile
+	- put sqlite into development and pg into development
+	- heroku run rake db:migrate
+	- heroku apps:rename newname
+	- In /config/environments/production. set:
+		config.cache_classes = true
+		config.serve_static_assets = true
+		config.assets.compile = true
+		config.assets.digest = true
+
+
+
+
+
+
+
+
+
 
 	
