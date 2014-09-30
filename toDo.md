@@ -35,3 +35,5 @@ x add boot strap
 	- add cards and js
 	- when creating a new card, redirect to its gallery page
 
+
+	
