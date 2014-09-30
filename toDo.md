@@ -15,6 +15,8 @@ To-Do
 	-x image uploader
 		- http://richonrails.com/articles/allowing-file-uploads-with-carrierwave
 	- stylize index page
+	- masonry
+		- http://w3bits.com/css-masonry/
 
 - relationships
 	-x belongs to 
