@@ -1,22 +1,11 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
+
  *= require_tree .
  *= require_self
  *= require rails_bootstrap_forms
  */
 
 
-.main { margin: 3em; }
 
 li { list-style-type: none; }
 
@@ -34,3 +23,151 @@ li { list-style-type: none; }
     margin: 0 0 1em;
     width: 100%;
 }
+
+
+
+
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *= require_tree .
+ *= require_self
+ *= require rails_bootstrap_forms
+ *= require font-awesome
+ 
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import 'bootstrap-datetimepicker';
+
+
+@font-face {
+  font-family:'van';    
+  src: url('van.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}  
+ 
+@font-face {
+  font-family:'goudy';    
+  src: url('goudy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}  
+ 
+@font-face {
+  font-family: 'joes';    
+  src: url('joes.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} 
+
+
+@font-face {
+  font-family: 'crasns';    
+  src: url('Crasns.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} 
+
+@font-face {
+  font-family: 'kel';    
+  src: url('kelvetica.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} 
+
+
+body {
+  line-height:0 !important;
+}
+
+
+
+
+/*   index  layout   */
+
+.sign {
+  float:right;
+  position:relative;
+  display: -webkit-box;  
+  top: .555em; 
+}
+
+.sign > p { padding: .5em; }
+
+.logBoxes {
+  position:initial;
+  right:0;
+/*  background-color:red;
+*/  top:.8em;
+  display: -webkit-box;
+  float:left;
+  right:5em;
+  
+}
+
+
+.smallBox2 {
+  position:absolute;
+  top:9em;
+  display: -webkit-box;
+  float:left;
+}
+
+
+.alert {
+	margin-top: 10px; 
+}
+
+.white {color:#fff;}
+
+
+/* Rails scaffold style compatibility */
+#error_explanation {
+  @extend .alert;
+  @extend .alert-error;
+  @extend .alert-block; /* optional */
+}
+
+.field_with_errors {
+  @extend .control-group.error
+}
+
+ 
+
+ /*  Sign-in page    */
+
+
+.signIn {
+  padding:0  0 2em 0;
+}
+.signInBox {
+  left:33.333%;
+ }
+
+.input {
+  width:6em;
+  height:2em;
+  margin:0;
+  padding:0;
+  
+}
+
+
+@media only screen and (max-width: 770px) {
+  .signIn{ margin-top:3em;} 
+  .signInBox{ width:100%; left:0 !important;}
+
+}
+
+@media only screen and (min-width: 771px) {
+  .signIn{ margin-top:6em;} 
+  .signInBox{ width:66.6666%; left:16.5%; text-align:center;}
+
+}
+
+
+

@@ -1,6 +1,35 @@
 
 
 
+
+
+
+
+Old home page
+------------------------------------------
+
+<h1> Project Amaranth </h1>
+	<h4>A project to help you learn things visually </h4>  
+
+	<h3> How it works </h3> 
+
+	<p><span style class="how">1</span> &nbsp Create a theme or choose a theme.</p>
+
+	<p><span style class="how">2</span> &nbsp Add cards with captions and photos </p>
+
+	<p><span style class="how">3</span> &nbsp In a theme page, hover over cards to see the caption</p> 
+
+	<p><span style class="how"> &nbsp Ideas for use </span> Languages, birds, types of dogs, names of countries... </p> 
+
+
+
+
+
+
+
+
+
+
 index
 ------------------------------------------
   <tbody>

@@ -15,8 +15,7 @@ class ThemesController < ApplicationController
   # GET /themes/new
   def new
     @theme = Theme.new
-    @card = Card.new
-  end
+   end
 
   # GET /themes/1/edit
   def edit
@@ -26,8 +25,7 @@ class ThemesController < ApplicationController
   # POST /themes.json
   def create
     @theme = Theme.new(theme_params)
-    @card = Card.new(card_params)
-
+ 
     respond_to do |format|
       if @theme.save
         format.html { redirect_to @theme, notice: 'Theme was successfully created.' }

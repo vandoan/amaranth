@@ -36,6 +36,12 @@ x add boot strap
 	- static pages
 	- add cards and js
 	- when creating a new card, redirect to its gallery page
+	- adding fonts
+		- in the config/application.rb
+			-  config.assets.paths << Rails.root.join("app", "assets", "fonts")
+			-  restart server
+			
+
 
 - heroku 
 	- deploy the app
@@ -50,6 +56,15 @@ x add boot strap
 		config.serve_static_assets = true
 		config.assets.compile = true
 		config.assets.digest = true
+
+		-http://stackoverflow.com/questions/16271696/cant-get-css-working-on-heroku-using-rails-4-with-bootstrap-saas-gem
+	- git push heroku master
+
+
+
+
+
+	
 
 
 
