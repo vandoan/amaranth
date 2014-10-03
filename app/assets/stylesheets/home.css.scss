@@ -27,7 +27,9 @@
   font-family: joes;
 }
 
-.band { height:22em !important; }
+.band { 
+    min-height: 22em !important; 
+    }
 
 .navbar {
     margin:0 !important; 
@@ -82,6 +84,12 @@ text-decoration: none !important;
 
 /*        SECTION     1       */ 
 
+.welSect1 {
+    z-index: 2;
+    min-height: 20em;
+    position:relative;
+}
+
 .welTitle  {
     left:7em; 
     position:fixed;
@@ -119,7 +127,7 @@ div.welTitle > p  {
 
 div.welSect2{
     z-index:3;
-    height: 55em; 
+    min-height: 55em; 
     background-color: #FFFFFF; 
     position:relative;
     font-family: joes !important;
@@ -148,7 +156,7 @@ p.welP2 {
 
 div.welSect21{
     z-index:4;
-    height: 70em; 
+    min-height: 70em; 
     background-color: #F1F1F1; 
     position:relative;
     font-family: 'joes' !important;
@@ -212,7 +220,7 @@ p.welP5 {
 
 .welSect3 {
     z-index:5;
-    height: 90em; 
+    min-height: 90em; 
     background-color: #ECECEC; 
     position: relative;
     z-index: 5;
@@ -285,7 +293,7 @@ p.wel3P2 {
 
 .welSect4 {
     z-index:5;
-    height: 90em; 
+    min-height: 90em; 
     background-color: #E5E5E5; 
     position: relative;
     z-index: 5;
@@ -337,8 +345,8 @@ p.wel4P2 {
 
 .welSect5 {
     z-index:5;
-    height: 60em; 
-    background-color: #E2E2E2; 
+    min-height: 60em; 
+    background-color: #FFFFFF; 
     position: relative;
     z-index: 1;
     font-family: 'joes'; 
@@ -354,6 +362,20 @@ p.wel5P1 {
     font-size: 7em; 
     margin: 4em 0 0 4em;     
  }
+
+.cloud {
+    background-image:url(/assets/iris.jpg);
+    background-size: 100%;
+    height: 5.2em;
+    width: 15em;
+    z-index: 1;
+    top: 7em;
+    position: fixed; 
+    left: 4em;
+    }
+
+
+
 
 /*   END     SECTION    5      */ 
 
