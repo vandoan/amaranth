@@ -4,6 +4,11 @@ gem "bootstrap_form"
 gem "twitter-bootstrap-rails"
 gem "pg", 		group: :production
 gem 'rails_12factor'
+gem 'font-awesome-rails'
+
+
+
+
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3',  group: :development

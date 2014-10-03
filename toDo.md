@@ -40,14 +40,14 @@ x add boot strap
 		- in the config/application.rb
 			-  config.assets.paths << Rails.root.join("app", "assets", "fonts")
 			-  restart server
-			
+
 
 
 - heroku 
 	- deploy the app
 	- heroku login 
 	- heroku create 
-	- rake asset:precompile
+	- rake assets:precompile
 	- put sqlite into development and pg into development
 	- heroku run rake db:migrate
 	- heroku apps:rename newname

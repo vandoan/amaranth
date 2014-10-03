@@ -1,20 +1,31 @@
-<h1> All the Cards</h1> <br>
 
-  
-  <div class="masonry">
+<div class="bgGrey"> 
+  <div class="container cardh1">
+    <h1> All the Cards</h1> <br>
+      <div class="masonry" style="margin-bottom:5em;">
 
-    <% @cards.each do |card| %>
-    <div class="boo item">
+        <% @cards.each do |card| %>
+          <div class="boo item card">
 
-        <li><%= link_to image_tag(card.image_url, :class => "thumb"), card_path(card.id) %></li>
-        
-        <div class="edit">
-          <li><%= card.caption %></li>
-          <li><%= link_to 'Show', card %></li>
-          <li><%= link_to 'Edit', edit_card_path(card) %></li>
-          <li><%= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' } %></li>
-        </div>
+            <div>
+              <div><%= link_to image_tag(card.image_url, :class => "thumb"), card_path(card.id) %>
+              </div>
+            </div>
+
+
+            <div class="edit col-md-12">
+              <div class="col-md-10 cap"><strong> <%= card.caption %></strong>
+              </div>
+                <div class="awesome col-md-2"> 
+                  <li><%= link_to content_tag(:i,nil, :class=>"fa fa-cog"), edit_card_path(card) %> </li>
+                  <li><%= link_to content_tag(:i,nil, :class=>"fa fa-trash-o"), card, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+                </div>
+            </div>
+          </div>
+        <% end %>
+      <div> 
+        <%= link_to content_tag(:i,nil, :class=>"fa fa-plus-square plus"), new_card_path, :class => "btnCard btn btn-sm btn-info col-md-12" %>
       </div>
-    <% end %>
+    </div>
+  </div>
 </div>
-<%= link_to 'New Card', new_card_path, :class => "btn btn-sm btn-info" %>

@@ -3,26 +3,3 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-.details { clear:both; }
-
-.details > li:first-child { font-weight: 500;}
-
-.edit { opacity: 0; transition: all 0.3s ease; 
-	display: inline-flex; 
-	 }
-
-.edit > li { margin: .5em .5em; }
-
-.edit:hover { opacity:.8; }
-
-.topicCard { float:left; }
-
-.boo > :nth-child(2) { font-weight: 600; opacity: 0; transition: all .4s ease;}
-
-.boo:hover :nth-child(2)  { opacity:.99; }
-
-.bottomBtn { clear:both; display: inline-flex; 
-	margin: 2em;
-}
-
-.bottomBtn li { color: #fefefe; margin: 2em .3em; opacity:.6; }

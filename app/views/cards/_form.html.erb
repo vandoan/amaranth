@@ -1,5 +1,5 @@
 
-<div class="container col-md-12">
+<div class="container bgGrey col-md-12">
   <div class="col-md-3 newCard">
     
     <%= bootstrap_form_for(@card) do |f| %>
@@ -16,11 +16,11 @@
       <% end %>
       <div class="innerCard">
 
-       <div class="field">
+      <div class="field">
         <%= f.select :title, Theme.all.map { |t| t.title}, include_blank:true, label: "Theme" %>
       </div>
+      
       <div class="field">
-
         <%= f.file_field :image %>
       </div>
       <div class="field">

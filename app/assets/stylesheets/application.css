@@ -3,6 +3,8 @@
  *= require_tree .
  *= require_self
  *= require rails_bootstrap_forms
+ *= require font-awesome
+
  */
 
 
@@ -80,11 +82,10 @@ li { list-style-type: none; }
 } 
 
 
-body {
-  line-height:0 !important;
+
+.bgGrey {
+  background-color: #F6F6F6;
 }
-
-
 
 
 /*   index  layout   */

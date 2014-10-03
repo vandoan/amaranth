@@ -3,19 +3,134 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-.newCard { margin: 2em 37%; background-color: #1ABC9C; font-size: 1.3em;
-	border-radius: .4em; opacity: .95; color: #f2f2f2; letter-spacing: .1em;
+
+
+.cardh1 > h1 {
+	font-family: joes;
+	font-size: 5em;
+	margin: 1.2em 2em .3em 2em;
+}
+
+.newCard { 
+	margin: 2em 37%; 
+	background-color: #1ABC9C; 
+	font-size: 1.3em;
+	border-radius: .4em; 
+	opacity: .95; 
+	color: #f2f2f2; 
+	letter-spacing: .1em;
 	 }
 
-.innerCard { padding: 3.3em  2em 7em 2em; }
+.innerCard { 
+	padding: 3.3em  2em 7em 2em; 
+	}
 
-.thumb { width: 80%; height: auto; overflow: hidden; border-radius: 3px; }
+.thumb { 
+	width: 100%; 
+	height: auto; 
+	overflow: hidden; 
+	border-radius: 6px 6px 0 0; 
+	}
 
-.rows td { padding: 1em .4em; }
+.rows td { 
+	padding: 1em .4em; 
+	}
 
-.centerTd > th { text-align: center; }
+.centerTd > th { 
+	text-align: center; 
+	}
 
-.item ul { float: left; }
+.item ul { 
+	float: 
+	left; 
+	}
 
-.item {clear: both; }
+.item {
+	clear: 
+	both; 
+	}
+
+.card {
+	border-radius: 6px;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+	background-color: #fff;
+}
+.details { 
+	clear:both; }
+
+.details > li:first-child { 
+	font-weight: 500;}
+
+div.edit { 
+	min-height: 5em !important;
+	opacity: 0; 
+	transition: all 0.3s ease; 
+	display: inline-flex; 
+	 }
+
+.edit > li { 
+	margin: .5em .5em; }
+
+.edit:hover {
+ 	opacity: .8;
+ 	}
+
+.topicCard { 
+	float: left; 
+	}
+
+/*.boo > :nth-child(2) { 
+	font-weight: 600; 
+	opacity: 0; 
+	transition: all .4s ease;}*/
+
+.boo:hover :nth-child(2)  { 
+	opacity: .99; 
+	}
+
+.bottomBtn { 
+	clear: both; 
+	display: inline-flex; 
+	margin: 2em;
+}
+
+.bottomBtn li { 
+	color: #fefefe; 
+	margin: 2em .3em; 
+	opacity: .6; 
+	}
+
+.awesome {
+	font-size: 1.6em; 
+	float: right;
+	right: 0;
+}
+
+.awesome > li {
+	margin: .6em  0 .5em .3em; 
+	display: inherit;
+	position: relative;
+	clear:both;
+} 
+
+.cap {
+	margin:.9em 0; 
+}
+
+.btnCard {
+ min-height: 12em;
+ border-radius: 6px; 
+ margin-bottom:5em; 	
+}
+
+.plus {
+	position: absolute;
+	top:34%;
+	font-size: 4em; 
+	left: 42%; 
+}
+
+
+
+
 
