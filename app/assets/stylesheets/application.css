@@ -46,8 +46,8 @@ li { list-style-type: none; }
 
 
 @font-face {
-  font-family:'van';    
-  src: url('van.otf') format('truetype');
+  font-family:'joeb';    
+  src: url('joeb.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }  
@@ -70,13 +70,6 @@ li { list-style-type: none; }
 @font-face {
   font-family: 'crasns';    
   src: url('Crasns.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-} 
-
-@font-face {
-  font-family: 'kel';    
-  src: url('kelvetica.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 } 

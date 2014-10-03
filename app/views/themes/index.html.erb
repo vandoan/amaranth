@@ -1,32 +1,51 @@
 
+<div class="bgGrey"> 
 
-<div class="container">
-  <h1>Themes</h1>
-    <% @themes.each do |theme| %>
-      <div class="col-md-4"> 
-        <div class="item">
-          <ul><li> <center><h4><%= theme.title %><center></h4></li>
-            <li><%= link_to image_tag(theme.image_url, :class => "thumb"), theme_path(theme.id) %> 
-            </li> 
-          </ul>
-          <ul class="details">
-            <br>
-            <li><%= theme.description %></li>
-            <div class="edit">
-              <li><%= link_to 'Show', theme %></li>
-              <li><%= link_to 'Edit', edit_theme_path(theme) %></li>
-              <li><%= link_to 'Destroy', theme, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+  <div class="container" style="padding-bottom:25em">
+
+
+    <div class="cardh1">
+      <h1>Decks</h1>
+      
+      <% @themes.each do |theme| %>
+        <div class="col-md-4">
+          <div class="boo item card">
+            
+            <div>
+              <div><%= link_to image_tag(theme.image_url, :class => "thumb"), theme_path(theme.id) %> 
+              </div> 
             </div>
-          </ul>
+
+            <div class="col-md-12 themedivs">
+              <br>
+              <div class="col-md-10 deckTitle"><h4><%= theme.title %></h4>
+                <br>
+                <p><%= theme.description %></p>
+              </div>
+
+              <div class="awesome col-md-1"> 
+                <li><%= link_to content_tag(:i,nil, :class=>"fa fa-cog"), edit_theme_path(theme) %> 
+                </li>
+                <li><%= link_to content_tag(:i,nil, :class=>"fa fa-trash-o"), theme, method: :delete, data: { confirm: 'Are you sure?' } %>
+                </li>
+              </div>
+            </div>
+
+          </div>
         </div>
-        <br>
-      </div>
       <% end %>
-      <br>
-    <div>
-      <%= link_to 'New Theme', new_theme_path, :class => "btn btn-sm btn-info", :style => "float: left; clear: both; margin: 3em;" %>
+        <div class="col-md-4">
+          <div class="card boo item"> 
+            <div> <%= link_to content_tag(:i,nil, :class=>"fa fa-plus-square plus"), new_theme_path, :class => "btnCard btn btn-sm btn-info col-md-12" %>
+            </div>
+            <div class="col-md-10 addDeck"><h3> add a deck</h3>
+            </div>
+          </div>
+        </div>
     </div>
   </div>
+</div>
+
 
 
 

@@ -31,6 +31,8 @@ x add boot strap
 	-x https://github.com/seyhunak/twitter-bootstrap-rails
 
 - stylizing 
+	- masonry
+		- http://masonry.desandro.com/#getting-started
 	- forms 
 		- https://github.com/plataformatec/simple_form
 	- static pages
