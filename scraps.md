@@ -1,5 +1,27 @@
 
 
+Old home page
+------------------------------------------
+
+
+
+
+
+
+mini card
+------------------------------------------
+
+        <div class="boo item card">
+            <div>
+              <div><%= image_tag(Card.find(2).image_url) %>
+              </div>
+            </div>
+            <div class="edit col-md-12" >
+              <div class="col-md-10 cap" style="height:4em;">
+              </div>
+            </div>
+        </div>
+
 
 
 

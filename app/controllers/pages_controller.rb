@@ -10,5 +10,12 @@ class PagesController < ApplicationController
 		render
 	end 
 
+  def index
+    @cards = Card.all
+  end
 
+    def card_params
+      params.require(:card).permit(:image, :caption, :title, :theme)
+    end
+    
 end 

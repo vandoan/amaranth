@@ -13,11 +13,42 @@
 	</div>
    
     <div class="welSect2">
-        <div class="sect2inner">
+
+ 
+         <div class="sect2inner">
+
+
             <center><p class="welP1 col-md-12">a visual learning aid </p></center> 
-            <p class="col-md-5 welP2"><strong>In ancient Greek mythology,<br> Iris, the goddess of the rainbow and the messenger of the gods, travels with the speed of the wind to all corners of the world, delivering their messages.</strong></p>  
+            <p class="col-md-5 welP2"><strong>In ancient Greek mythology,<br> Iris, the goddess of the rainbow and the messenger of the gods, travels with the speed of the wind to all corners of the world to deliver their messages.</strong></p>  
         </div> 
     </div>    
+
+    <div class="welSect20">
+        <div class="sect20inner">
+           
+      <div class=" minCard">
+        <% @cards = Card.order('created_at DESC').limit(9) %>
+        <% @cards.each  do |card| %>
+          <div class=" item card" style="width:8%; margin: 1.2%">
+
+            <div>
+              <div><%= link_to image_tag(card.image_url, :class => "thumb"), card_path(card.id) %>
+              </div>
+            </div>
+            <div class="edit mincap col-md-12">
+              <div class="col-md-10 mincap"><strong> <%= card.caption %></strong>
+              </div>
+
+            </div>
+          </div>
+        <% end %>
+      </div>            
+    </div> 
+
+
+    </div>    
+
+
 
     <div class="welSect21">
         <div class="sect2inner">
@@ -71,3 +102,4 @@
     <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+

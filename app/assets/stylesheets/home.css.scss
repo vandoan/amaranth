@@ -152,10 +152,43 @@ p.welP2 {
     font-size: 1.7em;
     }
 
+
+/*     SECTION 2.0    */
+
+div.welSect20{
+    z-index:4;
+    min-height: 18em; 
+    background-color: #F9F9F9; 
+    position:relative;
+    font-family: 'joes' !important;
+    margin: 0 !important; 
+    padding: 1em;
+
+}
+
+.sect20inner {
+    margin:0 3px;
+}
+
+.minCard {
+    margin:4em;
+    padding-top:2em !important;
+    position:relative;
+}
+
+.mincap { 
+    font-size: .8em;
+    min-height: 4em;
+    text-align: center;
+    margin-top: .6em;
+}
+
+
+
 /*     SECTION 2.1    */
 
 div.welSect21{
-    z-index:4;
+    z-index:5;
     min-height: 70em; 
     background-color: #F1F1F1; 
     position:relative;
@@ -219,7 +252,7 @@ p.welP5 {
 
 
 .welSect3 {
-    z-index:5;
+    z-index:6;
     min-height: 90em; 
     background-color: #ECECEC; 
     position: relative;
