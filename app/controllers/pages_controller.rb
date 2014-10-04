@@ -10,6 +10,10 @@ class PagesController < ApplicationController
 		render
 	end 
 
+	def tips
+		render
+	end 
+
   def index
     @cards = Card.all
   end

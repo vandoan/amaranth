@@ -43,8 +43,6 @@ x add boot strap
 			-  config.assets.paths << Rails.root.join("app", "assets", "fonts")
 			-  restart server
 
-
-
 - heroku 
 	- deploy the app
 	- heroku login 
@@ -62,9 +60,12 @@ x add boot strap
 		-http://stackoverflow.com/questions/16271696/cant-get-css-working-on-heroku-using-rails-4-with-bootstrap-saas-gem
 	- git push heroku master
 
+- add a tips page
+	- make sure to add its method to the page controller along with an erb in the pages view
 
-
-
+- home page 
+	- adding the latest mini-cards 
+		- http://stackoverflow.com/questions/3191448/limit-each-do-loop
 
 	
 

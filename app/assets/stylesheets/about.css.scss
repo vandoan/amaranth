@@ -1,0 +1,45 @@
+
+.about {
+	font: joes; 
+}
+
+div.about > div > div {
+	padding: 3em 10em 6em 10em; 
+}
+
+.aboutsect1 {
+    z-index: 3;
+    min-height: 20em;
+    position:relative;
+    padding-bottom:1em;
+}
+
+.aboutsect1 > div > h1 {
+	font-family: joes;
+	font-size: 5em;
+	margin: 1em 1em 1em 2em;
+}
+
+.aboutsect1 > div > p {
+	font-family: joes;
+	font-size: 2em;
+	line-height: 1.3em;
+}
+
+div.welSect2 {
+    z-index:3;
+    min-height: 55em; 
+    background-color: #FFFFFF; 
+    position:relative;
+    font-family: joes !important;
+}
+
+.aboutsect2 {
+	background-color: #E0E0E0;
+}
+
+
+
+
+
+
