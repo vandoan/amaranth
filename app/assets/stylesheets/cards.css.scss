@@ -17,15 +17,6 @@
 	font-size: 1.5em;
 	font-weight:600;
 }
-/*.newCard { 
-	margin: 2em 37%; 
-	background-color: #1ABC9C; 
-	font-size: 1.3em;
-	border-radius: .4em; 
-	opacity: .95; 
-	color: #f2f2f2; 
-	letter-spacing: .1em;
-	 }*/
 
 .innerCard { 
 	padding: 3.3em  2em 7em 2em; 
@@ -133,14 +124,15 @@ div.edit {
 .plus {
 	top: 36%;
 	font-size: 4em; 
-	left: 42%; 
+	left: 44%; 
 	position: absolute;
 }
 
 div > .addcard { 
-	margin: 1em 4em 3em 2.5em; 
 /*	transition: fade  0.7s ease;
 */	opacity: 0; 
+	margin: 3em 0;
+	text-align: center;
 }
 
 div:hover > .addcard {
