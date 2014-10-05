@@ -1,14 +1,14 @@
 
-<div class="bgGrey"> 
-
-  <div class="container" style="padding-bottom:25em">
+<div class="bgGrey" style="padding: 0 15%;"> 
 
 
-    <div class="cardh1">
+
+    <div class="cardh1 container">
       <h1>Decks</h1>
-      
+      <div class="masonry" style="margin-bottom:5em;">
+
       <% @themes.each do |theme| %>
-        <div class="col-md-4">
+        <div>
           <div class="boo item card">
             
             <div>
@@ -34,7 +34,7 @@
           </div>
         </div>
       <% end %>
-        <div class="col-md-4">
+        <div class="col-md-12">
           <div class="card boo item"> 
             <div> <%= link_to content_tag(:i,nil, :class=>"fa fa-plus-square plus"), new_theme_path, :class => "btnCard btn btn-sm btn-info col-md-12" %>
             </div>
