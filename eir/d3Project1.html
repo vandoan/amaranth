@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3 Test</title>
+        <script type="text/javascript" src="d3/d3.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            var dataset = [ 5, 10, 15, 20, 25 ]; 
+
+            d3.select("body")
+            .selectAll("p")
+            .data(dataset)
+            .enter()
+            .append("p")
+            .text(function(d){return d; });        
+       </script>
+
+       <ol>
+            <li>finds the body in the DOM and hands a reference off</li>
+            <li>selects all paragraphs and returns an empty selection</li>
+            <li>counts and parses out data values</li>
+            <li>creat new data-bound elements</li>
+
+       </ol>
+    </body>
+</html>     
