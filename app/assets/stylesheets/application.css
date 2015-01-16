@@ -1,0 +1,167 @@
+/*
+
+ *= require_tree .
+ *= require_self
+ *= require rails_bootstrap_forms
+ *= require font-awesome
+
+ */
+
+
+
+li { list-style-type: none; }
+
+.masonry { /* Masonry container */
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+    -moz-column-gap: 1em;
+    -webkit-column-gap: 1em;
+    column-gap: 1em;
+}
+
+.item { /* Masonry bricks or child elements */
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+}
+
+
+
+
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *= require_tree .
+ *= require_self
+ *= require rails_bootstrap_forms
+ *= require font-awesome
+ 
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import 'bootstrap-datetimepicker';
+
+
+@font-face {
+  font-family:'joeb';    
+  src: url('joeb.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}  
+ 
+@font-face {
+  font-family:'goudy';    
+  src: url('goudy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}  
+ 
+@font-face {
+  font-family: 'joes';    
+  src: url('joes.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} 
+
+
+@font-face {
+  font-family: 'crasns';    
+  src: url('Crasns.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} 
+
+
+
+.bgGrey {
+  background-color: #F6F6F6;
+}
+
+
+/*   index  layout   */
+
+.sign {
+  float:right;
+  position:relative;
+  display: -webkit-box;  
+  top: .555em; 
+}
+
+.sign > p { padding: .5em; }
+
+.logBoxes {
+  position:initial;
+  right:0;
+/*  background-color:red;
+*/  top:.8em;
+  display: -webkit-box;
+  float:left;
+  right:5em;
+  
+}
+
+
+.smallBox2 {
+  position:absolute;
+  top:9em;
+  display: -webkit-box;
+  float:left;
+}
+
+
+.alert {
+	margin-top: 10px; 
+}
+
+.white {color:#fff;}
+
+
+/* Rails scaffold style compatibility */
+#error_explanation {
+  @extend .alert;
+  @extend .alert-error;
+  @extend .alert-block; /* optional */
+}
+
+.field_with_errors {
+  @extend .control-group.error
+}
+
+ 
+
+ /*  Sign-in page    */
+
+
+.signIn {
+  padding:0  0 2em 0;
+}
+.signInBox {
+  left:33.333%;
+ }
+
+.input {
+  width:6em;
+  height:2em;
+  margin:0;
+  padding:0;
+  
+}
+
+
+@media only screen and (max-width: 770px) {
+  .signIn{ margin-top:3em;} 
+  .signInBox{ width:100%; left:0 !important;}
+
+}
+
+@media only screen and (min-width: 771px) {
+  .signIn{ margin-top:6em;} 
+  .signInBox{ width:66.6666%; left:16.5%; text-align:center;}
+
+}
+
+
+

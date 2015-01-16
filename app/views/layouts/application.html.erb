@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Iris</title>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+	</head>
+
+
+	<body>
+		<%= nav_bar :brand => "The Iris Project", :brand_link => root_path,  :static => :top, :responsive => true do%> 
+			<%= menu_group do %> 
+				<%= menu_item "Home", root_path %> 
+				<%= menu_item "Decks", themes_path %>
+				<%= menu_item "Cards", cards_path %>
+				<%= menu_item "Tips", tips_path %>
+				<%= menu_item "About", about_path %>
+			<% end %>
+		<% end %>
+				
+
+ 
+
+
+
+	<%= yield %>
+
+	<div class="footer col-md-12 container">
+		<div class="foot">
+			<div>An Untamed<br>Killer Whale Production</div>
+		</div>
+	</div>
+
+
+ 	</body>
+</html>

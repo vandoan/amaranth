@@ -1,0 +1,40 @@
+<div>
+<div class="container bgGrey col-md-12 editpage">
+
+  <div class="col-md-3 newCard">
+      <h1> &nbsp &nbsp <center> <strong>Edit card </strong></center></h1>
+
+    <%= bootstrap_form_for(@card) do |f| %>
+      <% if @card.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@card.errors.count, "error") %> prohibited this card from being saved:</h2>
+
+          <ul>
+          <% @card.errors.full_messages.each do |message| %>
+             <li><%= message %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+      <div class="innerCard">
+
+      <div class="field">
+        <%= f.select :title, Theme.all.map { |t| t.title}, include_blank:true, label: "Theme" %>
+      </div>
+      
+      <div class="field">
+        <%= f.file_field :image %>
+      </div>
+      <div class="field">
+        <%= f.text_field :caption %>
+      </div><br>
+      <div class="actions">
+        <center><%= f.submit "+", :class => " btn btn-info col-md-12 ", :style => "font-size:1.4em;" %></center>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+</div>
+
+ 

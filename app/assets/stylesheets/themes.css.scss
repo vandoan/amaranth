@@ -1,0 +1,84 @@
+// Place all the styles related to the Themes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.cardh1 > h1 {
+	font-size: 5em;
+	margin: 1.2em 2em .6em 2em;
+}
+
+.cardh1 {
+	font-family: joeb;
+}
+
+.col3 { 
+	width: 33% !important;
+}
+
+.themedivs {
+	margin: .5em 0 ; 
+}
+
+.themedivs > div {
+	display: inline-block; 
+}
+
+.deckTitle {
+	font-family: joes;
+}
+
+.deckTitle > h4 {
+	font-size: 2em;
+	font-weight: bold;
+	margin:0;
+	font-height:2em;
+}
+
+.deckTitle > p {
+	font-size: 1.3em;
+}
+
+.themedivs > div > li > a {
+	opacity: 0; 
+}
+
+.themedivs:hover > div > li > a {
+	opacity: .9; 
+}
+
+div > .addDeck { 
+	margin: 2em 5em 3em 4.2em; 
+/*	transition: fade  0.7s ease;
+*/	opacity: 0; 
+}
+
+div:hover > .addDeck {
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

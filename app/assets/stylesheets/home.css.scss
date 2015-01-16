@@ -1,0 +1,503 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/*     NAV     BAR   */
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-default .navbar-nav > .active > a:focus { 
+    background-color: transparent !important; 
+    color: red !important; 
+    text-decoration: none !important;
+    opacity:.95;
+    padding-top: 17px;
+    font-size: 1.3em;
+
+    }
+
+.navbar-default  {
+  opacity:.8;
+  background-color: #000 !important; 
+  border-color:#000 !important;
+  height: 2em; 
+  color: #FFFFFF !important;
+  letter-spacing: .1em;
+  line-height: 3em;
+  font-size:1.6em !important; 
+  font-family: joes;
+}
+
+.band { 
+    min-height: 22em !important; 
+    }
+
+.navbar {
+    margin:0 !important; 
+}
+.nav  > li > a { 
+    color: #FFFFFF !important; 
+    padding-top: 17px;
+    }
+
+.nav  > li > a:hover { 
+    opacity: .7 !important; 
+    }
+
+.sign > p > a { 
+    color: #FFFFFF; 
+    font-size: 1em; 
+    }
+
+.navbar-nav .navbar-default .nav > li > a { 
+    color: #FFF !important; 
+    }
+
+.navbar-default .navbar-brand {
+    color: #FFFFFF !important;
+    }
+
+a:hover {
+opacity: .7; 
+text-decoration: none !important;
+}
+
+
+.navbar-brand{
+    font-family:joes !important; 
+    font-size: 1.3em !important;
+    margin: 0 3em 0 0; 
+}
+
+
+.navbar-header {
+    margin-top:.4em;
+}
+
+.nav > li {
+    margin-top:.4em;
+}
+
+
+/*   END   OF   NAV   BAR     */
+
+
+
+/*        SECTION     1       */ 
+
+.welSect1 {
+    z-index: 2;
+    min-height: 20em;
+    position:relative;
+}
+
+.welTitle  {
+    left:7em; 
+    position:fixed;
+    z-index:2;
+    font-family: 'goudy' !important; 
+    margin-top:8.2em; 
+    color:#323232;
+    }
+
+div.welTitle > p  {
+    font-size: 10em;
+    margin:0 !important;
+    line-height:1em !important;
+}
+
+/*div.welTitle > p:nth-child(2)  {
+    font-size: 6.5em;
+    margin:0 0 0 4em !important;
+}*/
+
+
+
+/*    END    SECTION     1      */ 
+
+
+
+
+/*        SECTION     2       */ 
+
+
+
+.sect2inner {
+  position:relative;
+}
+
+div.welSect2{
+    z-index:3;
+    min-height: 55em; 
+    background-color: #FFFFFF; 
+    position:relative;
+    font-family: joes !important;
+
+}
+
+.sect3inner {
+    margin:3em 0; 
+}
+
+.welP1 {
+    font-size: 6em;
+    line-height: 3em !important;
+    margin-top: 1.7em;
+    text-align: center;
+}
+
+p.welP2 {
+    margin: 2em 0 0 7em;
+    line-height: 1.4em;
+    letter-spacing: 0.1em;
+    font-size: 1.7em;
+    }
+
+
+/*     SECTION 2.0    */
+
+div.welSect20{
+    z-index:4;
+    min-height: 18em; 
+    background-color: #F9F9F9; 
+    position:relative;
+    font-family: 'joes' !important;
+    margin: 0 !important; 
+    padding: 1em;
+
+}
+
+.sect20inner {
+    margin:0 3px;
+}
+
+.minCard {
+    margin:4em;
+    padding-top:2em !important;
+    position:relative;
+}
+
+.mincap { 
+    font-size: .8em;
+    min-height: 4em;
+    text-align: center;
+    margin-top: .6em;
+}
+
+
+
+/*     SECTION 2.1    */
+
+div.welSect21{
+    z-index:5;
+    min-height: 70em; 
+    background-color: #F1F1F1; 
+    position:relative;
+    font-family: 'joes' !important;
+
+}
+
+p.welP3 {
+    clear:both;
+    float:right;
+    margin: 9em 4em  0 0;
+    line-height: 1.4em;
+    letter-spacing: 0.1em;
+    font-size: 1.6em;
+    }
+
+p.welP4 {
+    clear:both; 
+    margin: 6em 0 0 8em;
+    line-height: 1.4em;
+    letter-spacing: 0.1em;
+    font-size: 2em;
+    }
+
+p.welP5 {
+    clear:both; 
+    margin: 6em 0 0 8em;
+    line-height: 1em;
+    letter-spacing: 0.1em;
+    font-size: 3em;
+    }
+
+.dream{
+    font-size: 2em;
+    margin: 0 0 0 .7em; 
+    font-family: crasns !important;
+    opacity:.94;
+}
+.dreams{
+    font-size: 3.2em;
+    margin: 0 0 0 .7em; 
+    font-family: crasns !important;
+    opacity:.94;
+}
+
+.dreamers{
+    font-size: 3em; 
+    margin: 0 0 0 .7em;
+    font-family: crasns !important;
+    opacity:.93;
+}
+/*     END     SECTION   2.1       */ 
+
+
+
+
+
+
+
+/*      SECTION    3        */ 
+
+
+.welSect3 {
+    z-index:6;
+    min-height: 90em; 
+    background-color: #ECECEC; 
+    position: relative;
+    z-index: 5;
+    font-family: 'joes'; 
+}
+
+.sect3inner > p { 
+    line-height: 2em;
+    clear: both;
+    font-size: 1em;
+}
+
+p.wel3P1 {
+    font-size: 7em; 
+    margin: 1em 0 0 5em;     
+ }
+
+p.wel3P2 {
+    clear:both;
+    margin: 1em 0 0 1em !important;
+    font-size: 2.8em;
+    position:relative;
+ }
+
+.wel3P3 {
+    font-size:3em !important;
+    margin: 0 0 0 24em;     
+ }
+
+.join {
+    font-size: 1.3em;
+    font-family:crasns;
+    border-bottom: 10px solid #333;
+}
+
+.start {
+    font-size: 1.5em;
+    font-family: crasns;
+    border-bottom: 10px solid #333;
+
+}
+
+.repeat {
+    font-size: 1.4em;
+    font-family: crasns;
+    border-bottom: 10px solid #333;
+
+}
+
+.wel3P4 {
+     margin:2em 0 0 1em;
+     font-size:1em !important;
+ } 
+
+ .wel3P5 {
+     margin:1em 0 0 8em;
+     font-size:3.4em !important;
+ } 
+
+
+/*     END     SECTION   3       */ 
+
+
+
+
+
+
+/*      SECTION    4      */ 
+
+
+.welSect4 {
+    z-index:5;
+    min-height: 90em; 
+    background-color: #E5E5E5; 
+    position: relative;
+    z-index: 5;
+    font-family: 'joes'; 
+}
+
+.sect4inner > p { 
+    line-height: 1.5em;
+    clear: both;
+    font-size: 3.4em;
+}
+
+p.wel4P1 {
+    font-size: 7em; 
+    margin: 1em 0 0 4em;     
+ }
+
+p.wel4P2 {
+    clear:both;
+    margin: 1em 0 0 1em !important;
+     position:relative;
+ }
+
+.wel4P3 {
+     margin: 0 0 0 21em;     
+ }
+
+.idea {
+    font-size: 1.3em;
+    border-bottom: 5px solid #333;
+    font-weight: bold;
+}
+
+ .wel3P5 {
+     margin:1em 0 0 8em;
+  } 
+
+
+
+
+
+/*    END    SECTION    4      */ 
+
+
+
+/*       SECTION    5      */ 
+
+
+
+.welSect5 {
+    z-index:5;
+    min-height: 60em; 
+    background-color: #FFFFFF; 
+    position: relative;
+    z-index: 1;
+    font-family: 'joes'; 
+}
+
+.sect5inner > p { 
+    line-height: 1.5em;
+    clear: both;
+    font-size: 3.4em;
+}
+
+p.wel5P1 {
+    font-size: 7em; 
+    margin: 4em 0 0 4em;     
+ }
+
+.cloud {
+    background-image:url(/assets/iris.jpg);
+    background-size: 100%;
+    height: 5.2em;
+    width: 15em;
+    z-index: 1;
+    top: 7em;
+    position: fixed; 
+    left: 4em;
+    }
+
+
+
+
+/*   END     SECTION    5      */ 
+
+
+
+a.button {
+    background: #e33f0c;
+    text-align: center;
+    padding: .5em 1em;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 0.2em 0 #ab3009;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+         
+    /*transition cross-browser stuff*/
+    -webkit-transition: background 0.2s ease-out;  /* Safari 3.2+, Chrome */
+    -moz-transition: background 0.2s ease-out;  /* Firefox 4-15 */
+    -o-transition: background 0.2s ease-out;  /* Opera 10.5–12.00 */
+    transition: background 0.2s ease-out;  /* Firefox 16+, Opera 12.50+ */
+}
+ 
+.sign {
+    top: .7em !important; 
+    line-height:1.3em;    }
+.sign > p:nth-child(n+2) {
+    font-size: .8em;
+    display: table-row
+
+}
+.hideS > p:nth-child(n+2) {
+     visibility: hidden;
+}
+
+.hideS:hover > p:nth-child(n+2) {
+     visibility: visible;
+}
+
+div.footer {
+    background-color:#111; 
+    height:10em; 
+    position:relative; 
+    z-index:20; 
+}
+
+.foot {
+        margin-top :4em !important; 
+}
+
+div.footer > div { 
+    text-align:center; 
+    font-family: 'joes' !important;
+    font-weight:bold;
+    color:#FFFFFF; 
+    font-size:1.3em; 
+    letter-spacing:.1;
+    }
+
+
+
+@media only screen and (min-width: 767px) { 
+ 
+}
+
+@media only screen and (min-width: 767px) { 
+ 
+    body {
+        font-size: 1.125em; /* 18px / 16px */
+        line-height: 1.7em;
+    }
+ 
+    header.band {
+        background-image:url(/assets/iris.jpg);
+        background-size: 100%;
+    }
+     
+    header.band h1 {
+        font-size: 3.25em; /*52 / 16*/
+    }
+     
+    a.button {
+        padding: .75em 1.5em;
+    }
+     
+}
+
+
+
+
+
+
